@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Cifra de césar</title>
+</head>
+
+<body>
+    <header class="titulo-principal">
+        <h1>Cifra de César</h1>
+    </header>
+
+    <img class="img-logo" src="imagens/logo.png">
+
+    <form class="form">
+        <label class = "center" for="exampleFormControlTextarea1">Digite a palavra a ser criptografada:</label>
+        <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+        </div>
+
+        <label class = "center" for="exampleFormControlTextarea1">Selecione a chave:</label>
+        <select class="custom-select" id="inputGroupSelect01">
+            <option selected>Escolher...</option>
+            <option value="1">Um</option>
+            <option value="2">Dois</option>
+            <option value="3">Três</option>
+        </select>
+    </form>
+
+    <div class="col-md-12" align="center">
+        <button class="btn btn-primary">Criptografar</button>
+        <button class="btn btn-primary">Descriptografar</button>
+    </div>
+
+    <form class="form">
+        <input class="form-control" type="text" placeholder="Resultado da criptografia" readonly>
+    </form>
+
+    <footer class="rodape">
+            <p>By: Priscila Marques</p>
+    </footer>
+
+</body>
+
+</html>
