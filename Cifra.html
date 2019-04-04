@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
     <title>Cifra de césar</title>
 </head>
 
@@ -64,16 +65,21 @@
     </form>
 
     <div class="col-md-12" align="center">
-        <button class="btn btn-primary">Criptografar</button>
-        <button class="btn btn-primary">Descriptografar</button>
+        <button class="btn btn-primary" onclick="cipher()">Criptografar</button>
+        <button class="btn btn-primary" onclick="decipher()">Descriptografar</button>
     </div>
 
-    <form class="form">
-        <input class="form-control" type="text" placeholder="Resultado da criptografia" readonly>
-    </form>
+    <div id="retorno" class="form">
+        <input class="form-control" type="text" placeholder="Resultado da criptografia" readonly id="return-cipher">
+    </div>
+
+    <div id="retorno" class="form">
+        <input class="form-control" type="text" placeholder="Resultado da descriptografia" readonly
+            id="return-decipher">
+    </div>
 
     <footer class="rodape">
-            <p>By: Priscila Marques</p>
+        <p>By: Priscila Marques</p>
     </footer>
 
 </body>
